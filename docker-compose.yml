@@ -34,8 +34,8 @@ services:
             - laravel
     php:
         build:
-            context:
-            dockerfile: dockerfile
+            context: .
+            dockerfile: Dockerfile
         container_name: php
         volumes:
             - ./src:/var/www
